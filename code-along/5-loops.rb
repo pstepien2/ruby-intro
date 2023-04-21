@@ -15,12 +15,16 @@
 
 # Loop through tacos
 tacos = ["carnitas", "carne asada", "pollo", "pescado"]
-i = 0
+# i = 0
 
-loop do
-    if i == tacos.count
-        break
-    end
-    puts "#{tacos[i]} tacos!"
-    i = i + 1
+# loop do
+#     if i == tacos.count
+#         break
+#     end
+#     puts "#{tacos[i]} tacos!"
+#     i = i + 1
+# end
+
+for type in tacos
+    puts "#{type} tacos!"
 end
