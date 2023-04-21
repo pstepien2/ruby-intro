@@ -29,4 +29,11 @@ bitcoin = gets.chomp
 bitcoin = bitcoin.to_f
 
 # 3. inspect the bitcoin_data hash
+usd_float = bitcoin_data["bpi"]["USD"]["rate_float"]
+usd_rate = bitcoin_data["bpi"]["USD"]["rate"]
+
+my_bitcoin = usd_float*bitcoin
+
 # puts bitcoin_data
+puts "1 Bitcoin is valued at $#{usd_rate} USD."
+puts "Your Bitcoin is worth $#{my_bitcoin} USD."
